@@ -1,0 +1,66 @@
+@import "buttons.css";
+
+:root {
+  --main-blue: hsl(232, 78%, 63%);
+  --main-blue-darker: hsl(232, 78%, 53%);
+  --secondary-purple: hsl(323, 57%, 57%);
+  --secondary-purple-darker: hsl(323, 57%, 51%);
+  --danger-red: hsl(358, 51%, 43%);
+  --danger-red-darker: hsl(358, 51%, 35%);
+  --dark-blue: hsl(234, 28%, 14%);
+  --light-blue: hsl(234, 28%, 64%);
+  --dark-grey-blue: hsl(231, 24%, 22%);
+
+  --image-list-horizontal-height: 122px;
+  --image-panel-height: calc(100% - 1.5rem - var(--image-list-horizontal-height));
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  color: white;
+  min-width: 310px;
+}
+
+html,
+body,
+input,
+button {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.7px;
+}
+
+input {
+  font-size: 0.9em;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline-color: transparent;
+}
+
+.vue-js-switch .v-switch-core {
+  background-color: #8e8e8e;
+}
+
+.vue-js-switch.toggled .v-switch-core {
+  background-color: hsl(232, 78%, 63%) !important;
+}
+
+.hidden {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-grey-blue);
+  height: 3rem;
+}
